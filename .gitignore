@@ -1,6 +1,8 @@
-.idea
+ .idea
+ *.xml
+ *.txt
+ *.iml
 target
 logs
-*.iml
-writenFromBook.txt
+/.idea
 
