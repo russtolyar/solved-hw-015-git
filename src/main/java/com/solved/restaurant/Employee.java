@@ -8,6 +8,15 @@ public class Employee {
     private String position;
     private String department;
     private Passport passport;
+    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
     public String getName() {
         return name;
