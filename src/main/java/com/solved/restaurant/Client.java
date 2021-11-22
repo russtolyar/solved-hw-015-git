@@ -1,39 +1,41 @@
 package com.solved.restaurant;
 
-import com.solved.restaurant.menu.MenuToDrink;
-import com.solved.restaurant.menu.MenuToEat;
+import com.solved.restaurant.menu.Menu;
+
 
 import java.time.LocalDateTime;
 
 
-public class Client extends Human{
+public class Client {
 
-    private MenuToDrink drink;
-    private MenuToEat food;
+    private Menu menu;
+    private String name;
+    private LocalDateTime dob;
     private boolean inRestaurant;
+    private Address address;
 
-
-    public Client(String name, String lastName, LocalDateTime dob, boolean isMarried, MenuToDrink drink, MenuToEat food, boolean inRestaurant) {
-        super(name, lastName, dob, isMarried);
-        this.drink = drink;
-        this.food = food;
-        this.inRestaurant = inRestaurant;
+    public Menu getMenu() {
+        return menu;
     }
 
-    public MenuToDrink getDrink() {
-        return drink;
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 
-    public void setDrink(MenuToDrink drink) {
-        this.drink = drink;
+    public String getName() {
+        return name;
     }
 
-    public MenuToEat getFood() {
-        return food;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setFood(MenuToEat food) {
-        this.food = food;
+    public LocalDateTime getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDateTime dob) {
+        this.dob = dob;
     }
 
     public boolean isInRestaurant() {
@@ -42,5 +44,13 @@ public class Client extends Human{
 
     public void setInRestaurant(boolean inRestaurant) {
         this.inRestaurant = inRestaurant;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

@@ -1,12 +1,10 @@
 package com.solved.restaurant.menu;
 
-import java.util.List;
 
 public class Drink {
 
     private boolean alcoholic;
     private String name;
-    private List<Ingridient> ingridients;
 
     public boolean isAlcoholic() {
         return alcoholic;
@@ -22,13 +20,5 @@ public class Drink {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public List<Ingridient> getIngridients() {
-        return ingridients;
-    }
-
-    public void setIngridients(List<Ingridient> ingridients) {
-        this.ingridients = ingridients;
     }
 }

@@ -1,9 +1,12 @@
-package com.solved.restaurant.menu;
+package com.solved.restaurant.department;
 
-public class Food {
+import java.util.List;
+
+public class Staff {
 
     private String name;
     private String type;
+    private List<String> products;
 
     public String getName() {
         return name;
@@ -19,5 +22,13 @@ public class Food {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public List<String> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<String> products) {
+        this.products = products;
     }
 }

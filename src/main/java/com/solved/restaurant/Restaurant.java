@@ -3,7 +3,6 @@ package com.solved.restaurant;
 import com.solved.restaurant.department.DepDelivery;
 import com.solved.restaurant.department.DepKitchen;
 import com.solved.restaurant.department.DepServiceInside;
-import com.solved.restaurant.employee.Employee;
 import com.solved.restaurant.menu.Menu;
 
 import java.time.LocalDateTime;
@@ -11,10 +10,10 @@ import java.util.List;
 
 public class Restaurant {
 
-    private  String name;
+    private String name;
     private LocalDateTime dateOfFoundation;
-    private List<Menu>menus;
-    private List<Client> client;
+    private Menu menu;
+    private List<Client> clients;
     private DepKitchen depKitchen;
     private DepServiceInside depServiceInside;
     private DepDelivery depDelivery;
@@ -35,20 +34,20 @@ public class Restaurant {
         this.dateOfFoundation = dateOfFoundation;
     }
 
-    public List<Menu> getMenus() {
-        return menus;
+    public Menu getMenu() {
+        return menu;
     }
 
-    public void setMenus(List<Menu> menus) {
-        this.menus = menus;
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 
-    public List<Client> getClient() {
-        return client;
+    public List<Client> getClients() {
+        return clients;
     }
 
-    public void setClient(List<Client> client) {
-        this.client = client;
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
     }
 
     public DepKitchen getDepKitchen() {
