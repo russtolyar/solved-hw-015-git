@@ -6,7 +6,7 @@ public class Staff {
 
     private String name;
     private String type;
-    private List<String> products;
+    private List<Product> products;
 
     public String getName() {
         return name;
@@ -24,11 +24,11 @@ public class Staff {
         this.type = type;
     }
 
-    public List<String> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<String> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 }

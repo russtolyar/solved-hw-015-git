@@ -6,7 +6,6 @@ public class Passport {
 
     private String number;
     private LocalDateTime expiredAt;
-    private boolean isOwnerMarried;
 
     public String getNumber() {
         return number;
@@ -24,11 +23,4 @@ public class Passport {
         this.expiredAt = expiredAt;
     }
 
-    public boolean isOwnerMarried() {
-        return isOwnerMarried;
-    }
-
-    public void setOwnerMarried(boolean ownerMarried) {
-        isOwnerMarried = ownerMarried;
-    }
 }
