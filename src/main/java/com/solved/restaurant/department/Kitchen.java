@@ -4,17 +4,17 @@ import com.solved.restaurant.Employee;
 
 import java.util.List;
 
-public class DepKitchen {
+public class Kitchen {
 
-    private List<Employee> kitEmployees;
+    private List<Employee> Employees;
     private List<Staff> staff;
 
-    public List<Employee> getKitEmployees() {
-        return kitEmployees;
+    public List<Employee> getEmployees() {
+        return Employees;
     }
 
-    public void setKitEmployees(List<Employee> kitEmployees) {
-        this.kitEmployees = kitEmployees;
+    public void setEmployees(List<Employee> Employees) {
+        this.Employees = Employees;
     }
 
     public List<Staff> getStaff() {
