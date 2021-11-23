@@ -1,25 +1,37 @@
 package com.solved.restaurant;
 
+import com.solved.restaurant.menu.Drink;
+import com.solved.restaurant.menu.Food;
 import com.solved.restaurant.menu.Menu;
 
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 public class Client {
 
-    private Menu menu;
     private String name;
     private LocalDateTime dob;
     private boolean inRestaurant;
     private Address address;
+    private List<Drink> drinks;
+    private List<Food> dishes;
 
-    public Menu getMenu() {
-        return menu;
+    public List<Drink> getDrinks() {
+        return drinks;
     }
 
-    public void setMenu(Menu menu) {
-        this.menu = menu;
+    public void setDrinks(List<Drink> drinks) {
+        this.drinks = drinks;
+    }
+
+    public List<Food> getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(List<Food> dishes) {
+        this.dishes = dishes;
     }
 
     public String getName() {

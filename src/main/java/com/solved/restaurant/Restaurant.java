@@ -1,8 +1,6 @@
 package com.solved.restaurant;
 
-import com.solved.restaurant.department.DepDelivery;
-import com.solved.restaurant.department.DepKitchen;
-import com.solved.restaurant.department.DepServiceInside;
+import com.solved.restaurant.department.Kitchen;
 import com.solved.restaurant.menu.Menu;
 
 import java.time.LocalDateTime;
@@ -14,9 +12,7 @@ public class Restaurant {
     private LocalDateTime dateOfFoundation;
     private Menu menu;
     private List<Client> clients;
-    private DepKitchen depKitchen;
-    private DepServiceInside depServiceInside;
-    private DepDelivery depDelivery;
+    private Kitchen kitchen;
 
     public String getName() {
         return name;
@@ -50,27 +46,12 @@ public class Restaurant {
         this.clients = clients;
     }
 
-    public DepKitchen getDepKitchen() {
-        return depKitchen;
+    public Kitchen getDepKitchen() {
+        return kitchen;
     }
 
-    public void setDepKitchen(DepKitchen depKitchen) {
-        this.depKitchen = depKitchen;
+    public void setDepKitchen(Kitchen kitchen) {
+        this.kitchen = kitchen;
     }
 
-    public DepServiceInside getDepServiceInside() {
-        return depServiceInside;
-    }
-
-    public void setDepServiceInside(DepServiceInside depServiceInside) {
-        this.depServiceInside = depServiceInside;
-    }
-
-    public DepDelivery getDepDelivery() {
-        return depDelivery;
-    }
-
-    public void setDepDelivery(DepDelivery depDelivery) {
-        this.depDelivery = depDelivery;
-    }
 }
