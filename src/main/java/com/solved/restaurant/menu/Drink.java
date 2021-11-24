@@ -1,6 +1,5 @@
 package com.solved.restaurant.menu;
 
-
 public class Drink {
 
     private boolean alcoholic;

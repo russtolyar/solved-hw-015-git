@@ -1,6 +1,5 @@
 package com.solved.restaurant.menu;
 
-
 import java.util.List;
 
 public class Menu {
