@@ -6,15 +6,15 @@ import java.util.List;
 
 public class Kitchen {
 
-    private List<Employee> Employees;
+    private List<Employee> employees;
     private List<Staff> staff;
 
     public List<Employee> getEmployees() {
-        return Employees;
+        return employees;
     }
 
     public void setEmployees(List<Employee> Employees) {
-        this.Employees = Employees;
+        this.employees = employees;
     }
 
     public List<Staff> getStaff() {
