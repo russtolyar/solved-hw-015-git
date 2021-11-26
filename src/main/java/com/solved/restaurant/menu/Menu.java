@@ -4,9 +4,18 @@ import java.util.List;
 
 public class Menu {
 
+    private Long id;
     private String type;
     private List<Drink> drinks;
     private List<Food> dishes;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getType() {
         return type;

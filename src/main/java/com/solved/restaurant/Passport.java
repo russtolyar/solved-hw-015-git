@@ -4,8 +4,17 @@ import java.time.LocalDateTime;
 
 public class Passport {
 
+    private Long id;
     private String number;
     private LocalDateTime expiredAt;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getNumber() {
         return number;

@@ -9,12 +9,21 @@ import java.util.List;
 
 public class Client {
 
+    private Long id;
     private String name;
     private LocalDateTime dob;
     private boolean inRestaurant;
     private Address address;
     private List<Drink> drinks;
     private List<Food> dishes;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public List<Drink> getDrinks() {
         return drinks;

@@ -3,12 +3,21 @@ package com.solved.restaurant;
 
 public class Employee {
 
+    private Long id;
     private String name;
     private String lastName;
     private String position;
     private String department;
     private Passport passport;
     private Address address;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Address getAddress() {
         return address;
