@@ -8,11 +8,20 @@ import java.util.List;
 
 public class Restaurant {
 
+    private Long id;
     private String name;
     private LocalDateTime dateOfFoundation;
     private Menu menu;
     private List<Client> clients;
     private Kitchen kitchen;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -46,12 +55,11 @@ public class Restaurant {
         this.clients = clients;
     }
 
-    public Kitchen getDepKitchen() {
+    public Kitchen getKitchen() {
         return kitchen;
     }
 
-    public void setDepKitchen(Kitchen kitchen) {
+    public void setKitchen(Kitchen kitchen) {
         this.kitchen = kitchen;
     }
-
 }

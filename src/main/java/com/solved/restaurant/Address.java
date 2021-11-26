@@ -2,10 +2,19 @@ package com.solved.restaurant;
 
 public class Address {
 
+    private Long id;
     private String city;
     private String street;
     private int numberHouse;
     private int numberFlat;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCity() {
         return city;
