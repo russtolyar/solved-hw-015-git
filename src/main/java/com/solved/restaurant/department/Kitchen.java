@@ -7,6 +7,7 @@ import java.util.List;
 public class Kitchen {
 
     private Long id;
+
     private List<Employee> employees;
     private List<Staff> staff;
 
