@@ -88,7 +88,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (4, str_to_date('11-11-1995','%d-%m-%Y'), 'Taya'),
  (6, str_to_date('12-12-1990','%d-%m-%Y'), 'Ira'),
  (8, str_to_date('05-05-2005','%d-%m-%Y'), 'Dima');
- 
+
 insert into Client_dishes (client_id, dish_id) values
 (1, 1),
 (1, 4),
@@ -107,4 +107,5 @@ insert into Restaurant_clients (restaurant_id, client_id) values
 (1, 1),
 (1, 2),
 (1, 4);
+
 

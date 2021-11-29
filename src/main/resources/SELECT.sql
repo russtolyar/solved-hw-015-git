@@ -106,7 +106,8 @@ Update Employees set last_name = 'Ivasin' where id = 4;
 Update Employees set first_name = 'Igor' where first_name = 'Vasya';
 
 /*
-*Выбор столбцов id, first_name, last_name всех объектов в таблице Employees и сортировка их по фамилии в порядке обратном алфавитному и по имени в алфавитном порядке
+*Выбор столбцов id, first_name, last_name всех объектов в таблице Employees и сортировка их по фамилии в порядке обратном алфавитному
+и по имени в алфавитном порядке
 */
 Select id, first_name, last_name from Employees 
 order by  last_name desc, first_name asc; 
@@ -147,6 +148,7 @@ inner join Client_dishes cd
 on d.id = cd.dish_id
 inner join Clients c 
 on c.id = cd.client_id;
+
 
 
 
