@@ -135,36 +135,36 @@ on update no action
 on delete cascade 
 );
 
-create table if not exists Clients_dishes (
+create table if not exists Client_dishes (
 id serial,
 client_id bigint unsigned not null,
 dish_id bigint unsigned not null,
 primary key(id),
-constraint fk_clients_dishes_client_id foreign key (client_id) references Clients(id)
+constraint fk_client_dishes_client_id foreign key (client_id) references Clients(id)
 on update no action
 on delete cascade
 );
 
-create table if not exists Clients_drinks (
+create table if not exists Client_drinks (
 id serial,
 client_id bigint unsigned not null,
 drink_id bigint unsigned not null,
 primary key(id),
-constraint fk_clients_drinks_client_id foreign key (client_id) references Clients(id)
+constraint fk_client_drinks_client_id foreign key (client_id) references Clients(id)
 on update no action
 on delete cascade
 );
 	
 
-create table if not exists Restaurants_client(
+create table if not exists Restaurant_clients(
 id serial,
 restaurant_id bigint unsigned not null,
 client_id bigint unsigned not null,
 primary key(id),
-constraint fk_restaurants_client_restaurant_id foreign key(restaurant_id) references Restaurants(id)
+constraint fk_restaurant_clients_restaurant_id foreign key(restaurant_id) references Restaurants(id)
 on update no action
 on delete cascade,
-constraint fk_restaurants_client_client_id foreign key(client_id) references Clients(id)
+constraint fk_restaurant_clients_client_id foreign key(client_id) references Clients(id)
 on update no action
 on delete cascade
 );
