@@ -5,6 +5,7 @@ use restaurantdb;
 Select * from Restaurants;
 
 Select id, name, date_Of_Foundation from Restaurants;
+
 /*
 *Выбор всех столбцов и строк в таблице Restaurants с переиноменованием полей
 */
@@ -16,9 +17,11 @@ Select id as restaurant_id, name as restaurant_name, date_Of_Foundation as start
 */
 
 Select id, name as restaurant_name from Restaurants where name = 'Falcone';
+
 /*
 *Выбор всех объектов в таблице Restaurants где значение поля date_Of_Foundation содержит 01
 */
+
 
 Select id, name, date_Of_Foundation from Restaurants where date_Of_Foundation like '%01%';
 /*
@@ -33,15 +36,19 @@ Select id, name, dob from Clients;
 Select id, name, dob from Clients where name like '%ya' or name like 'D%';
 /*
 *Выбор столбцов id, name всех объектов в таблице Drinks  где id четный
+
 */
 
 Select id, name from Drinks where (id%2) =0;
 /*
+
 *Выбор столбцов id, name всех объектов в таблице Drinks  напитки, которые безалкогольные
+
 */
 
 Select id, name from Drinks where isAlcoholic = false;
 /*
+
 *Выбор столбцов id, name всех объектов в таблице Dishes  где id 2 или 6
 */
 
@@ -60,6 +67,7 @@ Select id, name from Products where staff_id in (select id from staff where name
 *Выбор столбцов id, first_name всех объектов в таблице Employees и  столбцов id, number, expire_date всех объектов в таблице Passports,
  где  id из таблицы Passports соответствует значению позиции passport_id  в таблице Employees, 
  причем из таблицы Employees берутся все объекты, а из Passports только те, которые имеют связь с Employees  по  passport_id
+
 */
 Select e.id,e.first_name, p.id,p.number,p.expire_date from Employees e right join Passports p 
 on p.id = e.passport_id;
@@ -88,11 +96,13 @@ on c.id = cd.client_id;
 */
 
 Select id, first_name, last_name 
+
 from Employees
 order by first_name asc;
 /*
 *Выбор столбцов id,first_name, last_name всех объектов в таблице Employees и сортировка их по фамилии в порядке обратном алфавитному
 */
+
 
 Select id, first_name, last_name 
 from Employees
@@ -104,6 +114,7 @@ Update Employees set last_name = 'Ivasin' where id = 4;
 Update Employees set first_name = 'Igor' where first_name = 'Vasya';
 /*
 *Выбор столбцов id, first_name, last_name всех объектов в таблице Employees и сортировка их по фамилии в порядке обратном алфавитному и по имени в алфавитном порядке
+
 */
 
 Select id, first_name, last_name from Employees 
@@ -111,8 +122,10 @@ order by  last_name desc, first_name asc;
 /*
 *Вставка объекта в таблицу Employees и Выбор всех столбцов в таблице Employees 
 */
+
 insert into  Employees (passport_id, address_id, first_name, last_name, position, department) value
 (7, 9, 'Katya','Sydorova', 'washer', 'kitchen');
+
 Select * from Employees;
 /*
 *удаление объекта из таблицу Employees соответствующего имени Katya и Выбор всех столбцов в таблице Employees 
@@ -123,6 +136,7 @@ Select * from Employees;
 /*
 *Выбор столбцов id преименнованных в double_ordered_id всех заказанных объектов в таблице Dishes 
 */
+
 Select count(cd.id) as double_ordered_id, c.name, d.name
 from Dishes d 
 left join Clients_dishes cd 
@@ -131,6 +145,7 @@ left join Clients c
 on c.id = cd.client_id
 group by c.name
 having double_ordered_id > 1;
+
 
 
 

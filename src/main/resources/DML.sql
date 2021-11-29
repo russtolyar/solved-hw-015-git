@@ -14,6 +14,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  ('10007',str_to_date('30-11-2023','%d-%m-%YYYY'));
  
  insert into Addresses (city, street, house, flat) values
+
  ('Minsk', 'Zhukov', 1, 100),
  ('Fanipol', 'Sovet', 2, 5),
  (' ', 'Zhukov', 8, 9),
@@ -37,6 +38,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  
  insert into Kitchen_employees (kitchen_id, employee_id) values
  (1, 1), (1, 2), (1, 3), (1, 5);
+
  
  insert into Staff (kitchen_id, name, type) values
  (1,'FRIGE', 'equipment'),
@@ -47,6 +49,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (1,'boiler', 'equipment');
  
  insert into Products (staff_id, name) values
+
  (1, 'eggs'),
  (1, 'meat'),
  (1, 'chiken'),
@@ -57,6 +60,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (1, 'beaf'),
  (1, 'oil'),
  (1, 'carrot');
+
  
  insert into Menues (restaurant_id, type) values
  (1,'toDrink'),
@@ -75,6 +79,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (1, 'cola', false);
  
  insert into Dishes (menu_id, name, type) values
+
  (2, 'vegetabls', 'vegan'),
  (2, 'fried beaf', 'normal'),
  (2, 'boiled potato', 'vegan'),
@@ -82,6 +87,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (2, 'pizza', 'vegan'),
  (2, 'pizza with sausages', 'normal'),
  (2, 'baked chiken', 'normal');
+
  
  insert into Clients (address_id, dob, name) values
  (2, str_to_date('10-10-2000','%d-%m-%Y'), 'Olya'),
@@ -90,6 +96,7 @@ Insert into Restaurants (name, date_Of_Foundation) values
  (8, str_to_date('05-05-2005','%d-%m-%Y'), 'Dima');
  
 insert into Clients_dishes (client_id, dish_id) values
+
 (1, 1),
 (1, 4),
 (2, 5),
@@ -107,4 +114,5 @@ insert into Restaurants_client (restaurant_id, client_id) values
 (1, 1),
 (1, 2),
 (1, 4);
+
 
